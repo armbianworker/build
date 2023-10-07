@@ -12,10 +12,5 @@ jobs:
 
   Compile:
 
-    if: ${{ github.repository_owner == 'Armbian' }}
+#    if: ${{ github.repository_owner == 'Armbian' }}
     uses: armbian/os/.github/workflows/complete-artifact-matrix-all.yml@main
-    with:
-      skipImages: 'yes'
-      checkOci: 'yes'
-      extraParamsAllBuilds: 'DEBUG=yes'
-      nightlybuild: 'yes'
